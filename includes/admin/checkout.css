@@ -1,0 +1,25 @@
+body #wfacp-e-form .wfacp_main_form.woocommerce #payment ul.payment_methods li label img{
+    float: right!important;
+}
+
+
+/* Make the parent container a flex container */
+#cfw-payment-method {
+    display: flex;
+    flex-direction: column!important;
+}
+
+/* Move the bayarcash-identification-fields above the payment methods */
+#bayarcash-identification-fields {
+    order: -1!important;
+}
+
+/* Ensure other elements maintain their order */
+#cfw-billing-methods {
+    order: 0!important;
+}
+
+/* Add some spacing between the sections */
+#bayarcash-identification-fields {
+    margin-bottom: 20px!important;
+}

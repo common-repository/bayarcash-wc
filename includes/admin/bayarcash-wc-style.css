@@ -1,0 +1,101 @@
+/* General styles for all payment methods */
+div[id$="-verfiy-token"] {
+    margin: 20px 0 0 0 !important;
+}
+
+div[id$="-verfiy-token"] > button[id$="-verify-button"] {
+    margin: 0 20px 0 0;
+}
+
+div[id$="-verfiy-token"] > span[id$="-verify-status"] {
+    display: inline-block;
+}
+
+/* Specific styles for each payment method */
+#bayarcash-wc-verify-status.valid,
+#duitnow-wc-verify-status.valid,
+#linecredit-wc-verify-status.valid,
+#directdebit-wc-verify-status.valid,
+#duitnowqr-wc-verify-status.valid,
+#duitnowshopee-wc-verify-status.valid,
+#duitnowboost-wc-verify-status.valid,
+#duitnowqris-wc-verify-status.valid,
+#duitnowqriswallet-wc-verify-status.valid {
+    color: green;
+    font-weight: bold;
+    margin: 0 0 0 10px !important;
+}
+
+#bayarcash-wc-verify-status.invalid,
+#duitnow-wc-verify-status.invalid,
+#linecredit-wc-verify-status.invalid,
+#directdebit-wc-verify-status.invalid,
+#duitnowqr-wc-verify-status.invalid,
+#duitnowshopee-wc-verify-status.invalid,
+#duitnowboost-wc-verify-status.invalid,
+#duitnowqris-wc-verify-status.invalid,
+#duitnowqriswallet-wc-verify-status.invalid {
+    color: red;
+    font-weight: bold;
+    margin: 0 0 0 10px !important;
+}
+
+/* Rest of the CSS remains unchanged */
+/* Add some spacing between payment gateway sections */
+.wc-settings-sub-title {
+    margin-top: 2em;
+}
+
+.portal-info-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.merchant-info {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+.merchant-info p {
+    margin: 5px 0;
+}
+
+.portal-info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.portal-info-table th,
+.portal-info-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.portal-info-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.portal-info-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.portal-info-table tr:hover {
+    background-color: #e9ecef;
+}
+
+.button-secondary {
+    margin-left: 0px!important;
+    margin-top: 10px!important;
+}
+
+.copy-feedback {
+    color: green;
+    margin-left: 5px;
+}
